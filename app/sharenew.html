@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Obaju e-commerce template">
+    <meta name="author" content="Ondrej Svestka | ondrejsvestka.cz">
+    <meta name="keywords" content="">
+
+    <title>
+        Growlah!
+    </title>
+
+    <meta name="keywords" content="">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
+
+    <!-- styles -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+    <!-- theme stylesheet -->
+    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+    <!-- your stylesheet with modifications -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <script src="js/respond.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.0.4/firebase.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript" src="js/shareController.js"></script>
+    <link rel="shortcut icon" href="favicon.png">
+
+
+
+</head>
+
+<body ng-App="myApp">
+  <div ng-include="'header.html'"></div>
+    <div id="all">
+        <div id="content"  ng-controller="shareController">
+            <div class="container">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Home</a>
+                        </li>
+                        <li>Share New</li>
+                         <h2>Share with your community</h2>
+                    </ul>
+                        <form>
+                            <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="subject">What do you want to share?</label>
+                                            <input type="text" ng-model="saveProduct.productTitle" class="form-control" id="subject">
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="subject">Upload any image</label>
+                                            <input type="file" ng-model="saveProduct.productImage" class="form-control" id="subject">
+                                        </div>
+                                    </div>
+                            </div>
+                             <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="subject">Share for</label>
+                                            <input id="free" type="radio" name="fe" ng-value="free" ng-model="saveProduct.ProductFE">
+                                                Free
+                                            </input>
+                                            <input id="exchange" type="radio"  name="fe" ng-value="exchange" ng-model="saveProduct.ProductFE">
+                                                Exchange
+                                            </input>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="message">Any other information you wish to inform? </label>
+                                            <textarea id="message" ng-model="saveProduct.productDesc" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                     <div class="col-sm-12 text-left">
+                                    <button type="submit" ng-click="shareClick()" class="btn btn-primary"> Share </button>
+                            </div>
+                            <!-- /.row -->
+                            <div style="height:100px">
+                        </form>
+                    </ul>
+                </div>
+
+              </div> 
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+            <!-- /.container -->
+        </div>
+        <!-- /#footer -->
+
+        <!-- *** FOOTER END *** -->
+
+
+
+
+        <!-- *** COPYRIGHT ***
+ _________________________________________________________ -->
+        <div id="copyright">
+            <div class="container">
+                <div class="col-md-6">
+                    <p class="pull-left">© 2016 Growlah.</p>
+
+                </div>
+            </div>
+        </div>
+        <!-- *** COPYRIGHT END *** -->
+
+
+
+    </div>
+    <!-- /#all -->
+
+
+    
+
+    <!-- *** SCRIPTS TO INCLUDE ***
+ _________________________________________________________ -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap-hover-dropdown.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/front.js"></script>
+
+
+</body>
+
+</html>

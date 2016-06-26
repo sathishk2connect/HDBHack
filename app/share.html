@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Obaju e-commerce template">
+    <meta name="author" content="Ondrej Svestka | ondrejsvestka.cz">
+    <meta name="keywords" content="">
+
+    <title>
+        Growlah!
+    </title>
+
+    <meta name="keywords" content="">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
+
+    <!-- styles -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+    <!-- theme stylesheet -->
+    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+    <!-- your stylesheet with modifications -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/3.0.4/firebase.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript" src="js/shareController.js"></script>
+
+    <link rel="shortcut icon" href="favicon.png">
+
+   
+
+</head>
+
+<body ng-App="myApp">
+  <div ng-include="'header.html'"></div>
+    <div id="all">
+        <div id="content" ng-controller="shareController">
+            <div class="container">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a>
+                        </li>
+                        <li>Share</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="box">
+                      <div>
+                        <h1>Share</h1>
+                      </div>
+                        <div>Share what you have grown with your community of people 
+                           <a class="btn btn-default pull-right btn-primary" href="sharenew.html">
+                              <span class="hidden-xs">Share</span>
+                           </a>
+                        </div>
+                    </div>
+                  
+                    <div class="row products">
+                        <div ng-repeat="product in products">
+                        <div class="col-md-4 col-sm-6" >
+                            <div class="product" style="height: 650px">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="detail.html">
+                                                <img ng-src="{{product.productImage}}" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="detail.html">
+                                                <img ng-src="{{product.productImage}}" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="height: 450px">
+                                  <a href="detail.html" class="invisible">
+                                      <img ng-src="{{product.productImage}}" alt="" class="img-responsive">
+                                  </a>
+                               </div>
+                                <div class="text">
+                                    <h3><a href="detail.html">{{product.productTitle}}</a></h3>
+                                    <span>{{product.productDesc}}</span>
+                                    <p class="buttons">
+                                        <a href="detail.html" class="btn btn-default">Share your Interest</a>
+                                    </p>
+                                </div>
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pages">
+
+                        <p class="loadMore">
+                            <a href="#" class="btn btn-primary btn-lg"><i class="fa fa-chevron-down"></i> Load more</a>
+                        </p>
+
+                        <ul class="pagination">
+                            <li><a href="#">&laquo;</a>
+                            </li>
+                            <li class="active"><a href="#">1</a>
+                            </li>
+                            <li><a href="#">2</a>
+                            </li>
+                            <li><a href="#">3</a>
+                            </li>
+                            <li><a href="#">4</a>
+                            </li>
+                            <li><a href="#">5</a>
+                            </li>
+                            <li><a href="#">&raquo;</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <!-- /.col-md-9 -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+            <!-- /.container -->
+        </div>
+        </div>
+        <!-- /#footer -->
+
+        <!-- *** FOOTER END *** -->
+
+      
+
+
+        <!-- *** COPYRIGHT ***
+ _________________________________________________________ -->
+        <div id="copyright">
+            <div class="container">
+                <div class="col-md-6">
+                    <p class="pull-left">© 2015 Growlah</p>
+
+                </div>
+            </div>
+        </div>
+        <!-- *** COPYRIGHT END *** -->
+
+
+
+    </div>
+    <!-- /#all -->
+
+
+    
+
+    <!-- *** SCRIPTS TO INCLUDE ***
+ _________________________________________________________ -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap-hover-dropdown.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/front.js"></script>
+
+
+</body>
+
+</html>

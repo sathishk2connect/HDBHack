@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Obaju e-commerce template">
+    <meta name="author" content="Ondrej Svestka | ondrejsvestka.cz">
+    <meta name="keywords" content="">
+
+    <title>
+        Obaju : e-commerce template
+    </title>
+
+    <meta name="keywords" content="">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
+
+    <!-- styles -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+    <!-- theme stylesheet -->
+    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+    <!-- your stylesheet with modifications -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <script src="js/respond.min.js"></script>
+
+    <link rel="shortcut icon" href="favicon.png">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	  <script src="js/indexController.js"></script>
+
+</head>
+	
+<body ng-app="myApp">
+	
+	  <div ng-include="'header.html'"></div>  
+	
+    <div id="all">
+
+        <div id="content">
+            <div class="container">
+
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a>
+                        </li>
+                        <li>Showcase</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <!-- *** MENUS AND FILTERS ***
+ _________________________________________________________ -->
+                    <div class="panel panel-default sidebar-menu">
+
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Categories</h3>
+                        </div>
+
+                        <div class="panel-body">
+                            <ul class="nav nav-pills nav-stacked category-menu">
+                                <li>
+                                    <a href="category.html">From My Community </a>
+                                    <ul>
+                                        <li><a href="category.html">Kaki Bukit Center</a>
+                                        </li>
+                                        <li><a href="category.html">Bedok North</a>
+                                        </li>
+                                        <li><a href="category.html">Bedok South</a>
+                                        </li>
+                                        <li><a href="category.html">Chai Chee</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                 	
+                                <!--<li>-->
+                                    <!--<a href="category.html">Kids  <span class="badge pull-right">11</span></a>-->
+                                    <!--<ul>-->
+                                        <!--<li><a href="category.html">T-shirts</a>-->
+                                        <!--</li>-->
+                                        <!--<li><a href="category.html">Skirts</a>-->
+                                        <!--</li>-->
+                                        <!--<li><a href="category.html">Pants</a>-->
+                                        <!--</li>-->
+                                        <!--<li><a href="category.html">Accessories</a>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                <!--</li>-->
+
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <!--<div class="panel panel-default sidebar-menu">-->
+
+                        <!--<div class="panel-heading">-->
+                            <!--<h3 class="panel-title">Brands <a class="btn btn-xs btn-danger pull-right" href="#"><i class="fa fa-times-circle"></i> Clear</a></h3>-->
+                        <!--</div>-->
+
+                        <!--<div class="panel-body">-->
+
+                            <!--<form>-->
+                                <!--<div class="form-group">-->
+                                    <!--<div class="checkbox">-->
+                                        <!--<label>-->
+                                            <!--<input type="checkbox">Armani (10)-->
+                                        <!--</label>-->
+                                    <!--</div>-->
+                                    <!--<div class="checkbox">-->
+                                        <!--<label>-->
+                                            <!--<input type="checkbox">Versace (12)-->
+                                        <!--</label>-->
+                                    <!--</div>-->
+                                    <!--<div class="checkbox">-->
+                                        <!--<label>-->
+                                            <!--<input type="checkbox">Carlo Bruni (15)-->
+                                        <!--</label>-->
+                                    <!--</div>-->
+                                    <!--<div class="checkbox">-->
+                                        <!--<label>-->
+                                            <!--<input type="checkbox">Jack Honey (14)-->
+                                        <!--</label>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+
+                                <!--<button class="btn btn-default btn-sm btn-primary"><i class="fa fa-pencil"></i> Apply</button>-->
+
+                            <!--</form>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="panel panel-default sidebar-menu">-->
+
+                        <!--<div class="panel-heading">-->
+                            <!--<h3 class="panel-title">Colours <a class="btn btn-xs btn-danger pull-right" href="#"><i class="fa fa-times-circle"></i> Clear</a></h3>-->
+                        <!--</div>-->
+
+                        <!--<div class="panel-body">-->
+
+                            <!--<form>-->
+                                <!--<div class="form-group">-->
+                                    <!--<div class="checkbox">-->
+                                        <!--<label>-->
+                                            <!--<input type="checkbox"> <span class="colour white"></span> White (14)-->
+                                        <!--</label>-->
+                                    <!--</div>-->
+                                    <!--<div class="checkbox">-->
+                                        <!--<label>-->
+                                            <!--<input type="checkbox"> <span class="colour blue"></span> Blue (10)-->
+                                        <!--</label>-->
+                                    <!--</div>-->
+                                    <!--<div class="checkbox">-->
+                                        <!--<label>-->
+                                            <!--<input type="checkbox"> <span class="colour green"></span> Green (20)-->
+                                        <!--</label>-->
+                                    <!--</div>-->
+                                    <!--<div class="checkbox">-->
+                                        <!--<label>-->
+                                            <!--<input type="checkbox"> <span class="colour yellow"></span> Yellow (13)-->
+                                        <!--</label>-->
+                                    <!--</div>-->
+                                    <!--<div class="checkbox">-->
+                                        <!--<label>-->
+                                            <!--<input type="checkbox"> <span class="colour red"></span> Red (10)-->
+                                        <!--</label>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+
+                                <!--<button class="btn btn-default btn-sm btn-primary"><i class="fa fa-pencil"></i> Apply</button>-->
+
+                            <!--</form>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!-- *** MENUS AND FILTERS END *** -->
+
+                    <!--<div class="banner">-->
+                        <!--<a href="#">-->
+                            <!--<img src="img/banner.jpg" alt="sales 2014" class="img-responsive">-->
+                        <!--</a>-->
+                    <!--</div>-->
+                </div>
+
+                <div class="col-md-9">
+                    <div class="box">
+                        <h1>Showcase</h1>
+                        <p>In the showcase section, we show you the wide selection of the best gardens we have found and carefully selected from the community.</p>
+                    </div>
+
+                    <!--<div class="box info-bar">-->
+                        <!--<div class="row">-->
+                            <!--&lt;!&ndash;<div class="col-sm-12 col-md-4 products-showing">&ndash;&gt;-->
+                                <!--&lt;!&ndash;Showing <strong>12</strong> of <strong>25</strong> products&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+                            <!--<div class="col-sm-12 col-md-8  products-number-sort">-->
+                                <!--<div class="row">-->
+                                    <!--<form class="form-inline">-->
+                                        <!--<div class="col-md-6 col-sm-6">-->
+                                            <!--<div class="products-number">-->
+                                                <!--<strong>Show</strong>  <a href="#" class="btn btn-default btn-sm btn-primary">12</a>  <a href="#" class="btn btn-default btn-sm">24</a>  <a href="#" class="btn btn-default btn-sm">All</a> products-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="col-md-6 col-sm-6">-->
+                                            <!--<div class="products-sort-by">-->
+                                                <!--<strong>Sort by</strong>-->
+                                                <!--<select name="sort-by" class="form-control">-->
+                                                    <!--<option>Price</option>-->
+                                                    <!--<option>Name</option>-->
+                                                    <!--<option>Sales first</option>-->
+                                                <!--</select>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</form>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <div class="row products">
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="details.html">
+                                                <img src="img/garden1.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="details.html">
+                                                <img src="img/garden1.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="details.html" class="invisible">
+                                    <img src="img/garden1.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="text">
+                                    <h3><a href="details.html">Garden @ Blk 312 Kakit Bukit</a></h3>
+                                    <!--<p class="buttons">-->
+                                        <!--<a href="detail.html" class="btn btn-default">View detail</a>-->
+                                        <!--<a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
+                                    <!--</p>-->
+                                </div>
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="detail.html">
+                                                <img src="img/garden3.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="detail.html">
+                                                <img src="img/garden3.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="detail.html" class="invisible">
+                                    <img src="img/garden3.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="text">
+                                    <h3><a href="detail.html">Garden @ Blk 315 Bukit Timah</a></h3>
+                                    <!--<p class="price"><del>$280</del> $143.00</p>-->
+                                    <!--<p class="buttons">-->
+                                    <!--<a href="detail.html" class="btn btn-default">View detail</a>-->
+                                    <!--<a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
+                                    <!--</p>-->
+                                </div>
+                                <!-- /.text -->
+
+                                <!--<div class="ribbon sale">-->
+                                    <!--<div class="theribbon">SHARE</div>-->
+                                    <!--<div class="ribbon-background"></div>-->
+                                <!--</div>-->
+                                <!--&lt;!&ndash; /.ribbon &ndash;&gt;-->
+
+                                <!--<div class="ribbon new">-->
+                                    <!--<div class="theribbon" href="detail.html">SWAP</div>-->
+                                    <!--<div class="ribbon-background"></div>-->
+                                <!--</div>-->
+                                <!-- /.ribbon -->
+
+                                <!--<div class="ribbon gift">-->
+                                <!--<div class="theribbon">GIFT</div>-->
+                                <!--<div class="ribbon-background"></div>-->
+                                <!--</div>-->
+                                <!-- /.ribbon -->
+
+                                <!--<div class="flip-container">-->
+                                    <!--<div class="flipper">-->
+                                        <!--<div class="front">-->
+                                            <!--<a href="detail.html">-->
+                                                <!--<img src="img/product3.jpg" alt="" class="img-responsive">-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                        <!--<div class="back">-->
+                                            <!--<a href="detail.html">-->
+                                                <!--<img src="img/product3_2.jpg" alt="" class="img-responsive">-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<a href="detail.html" class="invisible">-->
+                                    <!--<img src="img/product3.jpg" alt="" class="img-responsive">-->
+                                <!--</a>-->
+                                <!--<div class="text">-->
+                                    <!--<h3><a href="detail.html">Red capsicum</a></h3>-->
+                                    <!--&lt;!&ndash;<p class="price">$143.00</p>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<p class="buttons">&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<a href="detail.html" class="btn btn-default">View detail</a>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<a href="basket.html" class="btn btn-primary"><i&ndash;&gt;-->
+                                                <!--&lt;!&ndash;class="fa fa-shopping-cart"></i>Add to cart</a>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</p>&ndash;&gt;-->
+
+                                <!--</div>-->
+                                <!-- /.text -->
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="detail.html">
+                                                <img src="img/garden4.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="detail.html">
+                                                <img src="img/garden4.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="detail.html" class="invisible">
+                                    <img src="img/garden4.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="text">
+                                    <h3><a href="detail.html">Garden @ Blk 210 Bukit Timah</a></h3>
+                                    <!--<p class="price">$143.00</p>-->
+                                    <!--<p class="buttons">-->
+                                        <!--<a href="detail.html" class="btn btn-default">View detail</a>-->
+                                        <!--<a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
+                                    <!--</p>-->
+
+                                </div>
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+                        <!--<div class="col-md-4 col-sm-6">-->
+                            <!--<div class="product">-->
+                                <!--<div class="flip-container">-->
+                                    <!--<div class="flipper">-->
+                                        <!--<div class="front">-->
+                                            <!--<a href="detail.html">-->
+                                                <!--<img src="img/product2.jpg" alt="" class="img-responsive">-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                        <!--<div class="back">-->
+                                            <!--<a href="detail.html">-->
+                                                <!--<img src="img/product2_2.jpg" alt="" class="img-responsive">-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--&lt;!&ndash;<a href="detail.html" class="invisible">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<img src="img/product2.jpg" alt="" class="img-responsive">&ndash;&gt;-->
+                                <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div class="text">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<h3><a href="detail.html">White Blouse Versace</a></h3>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<p class="price">$143.00</p>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<p class="buttons">&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<a href="detail.html" class="btn btn-default">View detail</a>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</p>&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash; /.text &ndash;&gt;-->
+
+                                <!--<div class="ribbon new">-->
+                                    <!--<div class="theribbon">NEW</div>-->
+                                    <!--<div class="ribbon-background"></div>-->
+                                <!--</div>-->
+                                <!--&lt;!&ndash; /.ribbon &ndash;&gt;-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; /.product &ndash;&gt;-->
+                        <!--</div>-->
+
+                        <!--<div class="col-md-4 col-sm-6">-->
+                            <!--<div class="product">-->
+                                <!--<div class="flip-container">-->
+                                    <!--<div class="flipper">-->
+                                        <!--<div class="front">-->
+                                            <!--<a href="detail.html">-->
+                                                <!--<img src="img/product1.jpg" alt="" class="img-responsive">-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                        <!--<div class="back">-->
+                                            <!--<a href="detail.html">-->
+                                                <!--<img src="img/product1_2.jpg" alt="" class="img-responsive">-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--&lt;!&ndash;<a href="detail.html" class="invisible">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<img src="img/product1.jpg" alt="" class="img-responsive">&ndash;&gt;-->
+                                <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div class="text">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<h3><a href="detail.html">Fur coat</a></h3>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<p class="price">$143.00</p>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<p class="buttons">&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<a href="detail.html" class="btn btn-default">View detail</a>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</p>&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash; /.text &ndash;&gt;-->
+
+                                <!--<div class="ribbon gift">-->
+                                    <!--<div class="theribbon">GIFT</div>-->
+                                    <!--<div class="ribbon-background"></div>-->
+                                <!--</div>-->
+                                <!--&lt;!&ndash; /.ribbon &ndash;&gt;-->
+
+                            <!--</div>-->
+                            <!--&lt;!&ndash; /.product &ndash;&gt;-->
+                        <!--</div>-->
+                        <!-- /.col-md-4 -->
+                    </div>
+                    <!-- /.products -->
+
+                    <!--<div class="pages">-->
+
+                        <!--<p class="loadMore">-->
+                            <!--<a href="#" class="btn btn-primary btn-lg"><i class="fa fa-chevron-down"></i> Load more</a>-->
+                        <!--</p>-->
+
+                        <!--&lt;!&ndash;<ul class="pagination">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="#">&laquo;</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li class="active"><a href="#">1</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="#">2</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="#">3</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="#">4</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="#">5</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="#">&raquo;</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                    <!--</div>-->
+
+
+                </div>
+                <!-- /.col-md-9 -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+
+        <!-- *** FOOTER ***
+ _________________________________________________________ -->
+        <!--<div id="footer" data-animate="fadeInUp">-->
+            <!--<div class="container">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-md-3 col-sm-6">-->
+                        <!--<h4>Pages</h4>-->
+
+                        <!--<ul>-->
+                            <!--<li><a href="text.html">About us</a>-->
+                            <!--</li>-->
+                            <!--<li><a href="text.html">Terms and conditions</a>-->
+                            <!--</li>-->
+                            <!--<li><a href="faq.html">FAQ</a>-->
+                            <!--</li>-->
+                            <!--<li><a href="contact.html">Contact us</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+
+                        <!--<hr>-->
+
+                        <!--<h4>User section</h4>-->
+
+                        <!--<ul>-->
+                            <!--<li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>-->
+                            <!--</li>-->
+                            <!--<li><a href="register.html">Regiter</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+
+                        <!--<hr class="hidden-md hidden-lg hidden-sm">-->
+
+                    <!--</div>-->
+                    <!--&lt;!&ndash; /.col-md-3 &ndash;&gt;-->
+
+                    <!--<div class="col-md-3 col-sm-6">-->
+
+                        <!--<h4>Top categories</h4>-->
+
+                        <!--<h5>Men</h5>-->
+
+                        <!--<ul>-->
+                            <!--<li><a href="category.html">T-shirts</a>-->
+                            <!--</li>-->
+                            <!--<li><a href="category.html">Shirts</a>-->
+                            <!--</li>-->
+                            <!--<li><a href="category.html">Accessories</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+
+                        <!--<h5>Ladies</h5>-->
+                        <!--<ul>-->
+                            <!--<li><a href="category.html">T-shirts</a>-->
+                            <!--</li>-->
+                            <!--<li><a href="category.html">Skirts</a>-->
+                            <!--</li>-->
+                            <!--<li><a href="category.html">Pants</a>-->
+                            <!--</li>-->
+                            <!--<li><a href="category.html">Accessories</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+
+                        <!--<hr class="hidden-md hidden-lg">-->
+
+                    <!--</div>-->
+                    <!--&lt;!&ndash; /.col-md-3 &ndash;&gt;-->
+
+                    <!--<div class="col-md-3 col-sm-6">-->
+
+                        <!--<h4>Where to find us</h4>-->
+
+                        <!--<p><strong>Obaju Ltd.</strong>-->
+                            <!--<br>13/25 New Avenue-->
+                            <!--<br>New Heaven-->
+                            <!--<br>45Y 73J-->
+                            <!--<br>England-->
+                            <!--<br>-->
+                            <!--<strong>Great Britain</strong>-->
+                        <!--</p>-->
+
+                        <!--<a href="contact.html">Go to contact page</a>-->
+
+                        <!--<hr class="hidden-md hidden-lg">-->
+
+                    <!--</div>-->
+                    <!--&lt;!&ndash; /.col-md-3 &ndash;&gt;-->
+
+
+
+                    <!--<div class="col-md-3 col-sm-6">-->
+
+                        <!--<h4>Get the news</h4>-->
+
+                        <!--<p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>-->
+
+                        <!--<form>-->
+                            <!--<div class="input-group">-->
+
+                                <!--<input type="text" class="form-control">-->
+
+                                <!--<span class="input-group-btn">-->
+
+			    <!--<button class="btn btn-default" type="button">Subscribe!</button>-->
+
+			<!--</span>-->
+
+                            <!--</div>-->
+                            <!--&lt;!&ndash; /input-group &ndash;&gt;-->
+                        <!--</form>-->
+
+                        <!--<hr>-->
+
+                        <!--<h4>Stay in touch</h4>-->
+
+                        <!--<p class="social">-->
+                            <!--<a href="#" class="facebook external" data-animate-hover="shake"><i class="fa fa-facebook"></i></a>-->
+                            <!--<a href="#" class="twitter external" data-animate-hover="shake"><i class="fa fa-twitter"></i></a>-->
+                            <!--<a href="#" class="instagram external" data-animate-hover="shake"><i class="fa fa-instagram"></i></a>-->
+                            <!--<a href="#" class="gplus external" data-animate-hover="shake"><i class="fa fa-google-plus"></i></a>-->
+                            <!--<a href="#" class="email external" data-animate-hover="shake"><i class="fa fa-envelope"></i></a>-->
+                        <!--</p>-->
+
+
+                    <!--</div>-->
+                    <!--&lt;!&ndash; /.col-md-3 &ndash;&gt;-->
+
+                <!--</div>-->
+                <!--&lt;!&ndash; /.row &ndash;&gt;-->
+
+            <!--</div>-->
+            <!--&lt;!&ndash; /.container &ndash;&gt;-->
+        <!--</div>-->
+        <!--&lt;!&ndash; /#footer &ndash;&gt;-->
+
+        <!--&lt;!&ndash; *** FOOTER END *** &ndash;&gt;-->
+
+
+
+
+        <!--&lt;!&ndash; *** COPYRIGHT ***-->
+ <!--_________________________________________________________ &ndash;&gt;-->
+        <!--<div id="copyright">-->
+            <!--<div class="container">-->
+                <!--<div class="col-md-6">-->
+                    <!--<p class="pull-left">© 2015 Your name goes here.</p>-->
+
+                <!--</div>-->
+                <!--<div class="col-md-6">-->
+                    <!--<p class="pull-right">Template by <a href="http://bootstrapious.com/e-commerce-templates">Bootstrapious</a> with support from <a href="https://kakusei.cz">Kakusei</a> -->
+                        <!--&lt;!&ndash; Not removing these links is part of the licence conditions of the template. Thanks for understanding :) &ndash;&gt;-->
+                    <!--</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!-- *** COPYRIGHT END *** -->
+
+
+
+    </div>
+    <!-- /#all -->
+
+
+    
+
+    <!-- *** SCRIPTS TO INCLUDE ***
+ _________________________________________________________ -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap-hover-dropdown.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/front.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
